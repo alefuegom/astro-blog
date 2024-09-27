@@ -1,2 +1,22 @@
 @import "../fonts/Amulya/css/amulya.css";
 @import "../fonts/Hind/css/hind.css";
+
+:root {
+  /* Primary Colors */
+  --color-deep-navy: #121b28; /* Deep Navy */
+  --color-slate-gray: #4b5563; /* Slate Gray */
+  --color-charcoal: #3e3e3e; /* Charcoal */
+  --color-dark-teal: #007b7f; /* Dark Teal */
+
+  /* Accent Colors */
+  --color-electric-blue: #00bfff; /* Electric Blue */
+  --color-warm-olive-green: #4d5b31; /* Warm Olive Green */
+  --color-soft-white: #f2f2f2; /* Soft White */
+
+  /* Additional Colors */
+  --color-burgundy: #7b2a39; /* Burgundy */
+}
+
+body {
+  margin: 0;
+}
