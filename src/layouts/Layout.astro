@@ -13,6 +13,7 @@ const { title } = Astro.props;
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="/styles/global.css">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -36,6 +37,15 @@ const { title } = Astro.props;
 		font-family: system-ui, sans-serif;
 		background: #13151a;
 	}
+	h1,h2,h3,h4,h5,h6{
+		font-family: "Hind-Bold";
+		margin: 0;
+	}
+	p, li, a {
+		font-family: "Amulya-Regular";
+		margin: 0;
+	}
+
 	code {
 		font-family:
 			Menlo,
