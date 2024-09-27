@@ -1,0 +1,77 @@
+/**
+* @license
+*
+* Font Family: Amulya
+* Designed by: Joana Correia
+* URL: https://www.fontshare.com/fonts/amulya
+* © 2024 Indian Type Foundry
+*
+* Amulya Light 
+* Amulya LightItalic 
+* Amulya Regular 
+* Amulya Italic 
+* Amulya Medium 
+* Amulya MediumItalic 
+* Amulya Bold 
+* Amulya BoldItalic 
+* Amulya Variable (Variable font)
+* Amulya VariableItalic (Variable font)
+
+*
+*/
+@font-face {
+  font-family: "Amulya-Light";
+  src: url("../fonts/Amulya-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Amulya-LightItalic";
+  src: url("../fonts/Amulya-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Amulya-Regular";
+  src: url("../fonts/Amulya-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Amulya-Italic";
+  src: url("../fonts/Amulya-Italic.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Amulya-Medium";
+  src: url("../fonts/Amulya-Medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Amulya-MediumItalic";
+  src: url("../fonts/Amulya-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Amulya-Bold";
+  src: url("../fonts/Amulya-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Amulya-BoldItalic";
+  src: url("../fonts/Amulya-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
