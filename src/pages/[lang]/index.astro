@@ -3,13 +3,14 @@ export async function getStaticPaths() {
   return [{ params: { lang: "en" } }, { params: { lang: "es" } }];
 }
 
-import Layout from "../layouts/Layout.astro";
-import en from "../i18n/en.json";
+import Layout from "../../layouts/Layout.astro";
+import en from "../../i18n/en.json";
+import es from "../../i18n/es.json";
 
 // Get the current language from the parameters
 const { params } = Astro;
-const lang = "en"; // Default to English
-const translations = en;
+const lang = params.lang || "en"; // Default to English
+const translations = lang === "es" ? es : en;
 ---
 
 <Layout title={translations["home.page.title"]} lang={lang}>
