@@ -1,3 +1,9 @@
 {
-    "home.page.title" : "404 Blog - Home"
+    "home.page.title" : "404 Blog - Home",
+
+    "header.links.home": "Home",
+    "header.links.categories": "Categories",
+    "header.links.about": "About",
+    "header.links.contribution": "Contribute",
+    "header.search-bar.label": "Quick search..."
 }

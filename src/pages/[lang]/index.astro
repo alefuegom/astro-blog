@@ -6,6 +6,7 @@ export async function getStaticPaths() {
 import Layout from "../../layouts/Layout.astro";
 import en from "../../i18n/en.json";
 import es from "../../i18n/es.json";
+import Header from "../../components/Header.astro";
 
 // Get the current language from the parameters
 const { params } = Astro;
@@ -14,12 +15,12 @@ const translations = lang === "es" ? es : en;
 ---
 
 <Layout title={translations["home.page.title"]} lang={lang}>
+  <Header translation={translations} />
   <main class="blog-main-cnt"></main>
 </Layout>
 
 <style>
   .blog-main-cnt {
     height: 100vh;
-    background-color: var(--color-deep-navy);
   }
 </style>

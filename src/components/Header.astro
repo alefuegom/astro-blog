@@ -1,0 +1,139 @@
+---
+import type { IHeaderLink } from "../models/header-link.model";
+import { Image } from "astro:assets";
+import searchIcon from "../../public/icons/search.svg";
+import menuIcon from "../../public/icons/menu.svg";
+interface Props {
+  translation: any;
+}
+export const headerLinks: Array<IHeaderLink> = [
+  { label: "header.links.home" },
+  { label: "header.links.categories" },
+  { label: "header.links.about" },
+];
+const { translation } = Astro.props;
+---
+
+<header class="header__cnt">
+  <section class="header__inner-cnt">
+    <section class="header__nav-cnt">
+      <h1 class="header__title">404 Blog</h1>
+      <nav class="header__nav">
+        {
+          headerLinks.map((link: IHeaderLink) => (
+            <a class="header__nav__link">{translation[link.label]}</a>
+          ))
+        }
+      </nav>
+    </section>
+    <div class="header__button-row">
+      <button class="header__search-button">
+        <Image
+          class="header__search-icon"
+          src={searchIcon}
+          alt="A description of my image."
+        />
+        <span class="header__search-button-text"
+          >{translation["header.search-bar.label"]}</span
+        >
+      </button>
+    </div>
+    <section class="header__hamburger-cnt">
+      <button class="header__search-button">
+        <Image
+          class="header__search-icon"
+          src={menuIcon}
+          alt="A description of my image."
+        />
+      </button>
+    </section>
+  </section>
+</header>
+
+<style>
+  .header__cnt {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--color-slate-gray);
+    background-color: var(--color-slate-navy);
+    padding-block: 1rem;
+  }
+  .header__inner-cnt {
+    max-width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    gap: 3rem;
+    justify-content: space-between;
+  }
+  .header__nav-cnt {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+  }
+  .header__title {
+    font-size: 2rem;
+    color: var(--color-soft-white);
+    text-align: center;
+  }
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: transparent;
+    color: var(--color-soft-white);
+  }
+  .header__nav__link {
+    padding: 0.5rem;
+    list-style-type: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color ease 0.5s;
+    border-bottom: 0;
+  }
+  .header__nav__link:hover {
+    color: var(--color-electric-blue);
+  }
+  .header__search-button {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--color-deep-navy);
+    border: 1px solid var(--color-slate-gray);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .header__button-row {
+    width: 30%;
+  }
+  .header__search-button:hover {
+    border-color: var(--color-soft-white);
+  }
+  .header__search-button-text {
+    font-size: 0.875rem;
+    color: var(--color-slate-gray);
+  }
+  .header__hamburger-cnt {
+    display: none;
+  }
+  @media screen and (max-width: 600px) {
+    .header__hamburger-cnt {
+      display: block;
+    }
+    .header__nav {
+      display: none;
+    }
+    .header__button-row {
+      display: none;
+    }
+  }
+</style>

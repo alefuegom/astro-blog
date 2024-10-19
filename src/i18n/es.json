@@ -1,3 +1,10 @@
 {
-    "home.page.title" : "404 Blog - Inicio"
+    "home.page.title" : "404 Blog - Inicio",
+    
+    "header.links.home": "Inicio",
+    "header.links.categories": "Categorías",
+    "header.links.about": "Sobre nosotros",
+    "header.links.contribution": "Colaboraciones",
+    "header.search-bar.label": "Búsqueda rápida..."
+
 }
