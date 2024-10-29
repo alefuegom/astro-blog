@@ -1,8 +1,6 @@
 ---
 import type { IHeaderLink } from "../models/header-link.model";
-import { Image } from "astro:assets";
-import searchIcon from "../../public/icons/search.svg";
-import menuIcon from "../../public/icons/menu.svg";
+import { IconMenu2, IconSearch } from "@tabler/icons-react";
 interface Props {
   translation: any;
 }
@@ -28,11 +26,7 @@ const { translation } = Astro.props;
     </section>
     <div class="header__button-row">
       <button class="header__search-button">
-        <Image
-          class="header__search-icon"
-          src={searchIcon}
-          alt="A description of my image."
-        />
+        <IconSearch stroke={1.75} color="var(--color-soft-white)" size="24" />
         <span class="header__search-button-text"
           >{translation["header.search-bar.label"]}</span
         >
@@ -40,11 +34,7 @@ const { translation } = Astro.props;
     </div>
     <section class="header__hamburger-cnt">
       <button class="header__search-button">
-        <Image
-          class="header__search-icon"
-          src={menuIcon}
-          alt="A description of my image."
-        />
+        <IconMenu2 stroke={1.75} color="var(--color-soft-white)" size="24" />
       </button>
     </section>
   </section>
