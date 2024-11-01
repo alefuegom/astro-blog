@@ -7,6 +7,7 @@ import Layout from "../../layouts/Layout.astro";
 import en from "../../i18n/en.json";
 import es from "../../i18n/es.json";
 import Header from "../../components/Header.astro";
+import Hero from "../../components/Hero.astro";
 
 // Get the current language from the parameters
 const { params } = Astro;
@@ -16,11 +17,15 @@ const translations = lang === "es" ? es : en;
 
 <Layout title={translations["home.page.title"]} lang={lang}>
   <Header translation={translations} />
-  <main class="blog-main-cnt"></main>
-</Layout>
+  <main class="blog-main-cnt">
+    <Hero />
+  </main>
 
-<style>
-  .blog-main-cnt {
-    height: 100vh;
-  }
-</style>
+  <style>
+    .blog-main-cnt {
+      height: 100vh;
+      margin: auto;
+      max-width: var(--body-general-max-width);
+    }
+  </style>
+</Layout>
