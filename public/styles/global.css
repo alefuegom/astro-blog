@@ -16,6 +16,8 @@
 
   /* Additional Colors */
   --color-burgundy: #7b2a39; /* Burgundy */
+
+  --body-general-max-width: 80vw;
 }
 
 body {
