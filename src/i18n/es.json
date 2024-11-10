@@ -5,6 +5,9 @@
     "header.links.categories": "Categorías",
     "header.links.about": "Sobre nosotros",
     "header.links.contribution": "Colaboraciones",
-    "header.search-bar.label": "Búsqueda rápida..."
+    "header.search-bar.label": "Búsqueda rápida...",
+
+    "button.continue_reading": "Seguir leyendo",
+    "button.see_more": "Ver más"
 
 }

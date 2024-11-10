@@ -5,5 +5,8 @@
     "header.links.categories": "Categories",
     "header.links.about": "About",
     "header.links.contribution": "Contribute",
-    "header.search-bar.label": "Quick search..."
+    "header.search-bar.label": "Quick search...",
+
+    "button.continue_reading": "Read more",
+    "button.see_more": "See more"
 }
